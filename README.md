@@ -6,8 +6,8 @@ one line placeholder to describe our project.
 * Naming convention for each branch: feature/action. For example: feature/login, feature/auth.
 
 ## Team
-Krishala Chhetri
-Sanjana Shangle
-Kevin Soto-Miranda
-Alex Vu
-Emily Warren
+* Krishala Chhetri
+* Sanjana Shangle
+* Kevin Soto-Miranda
+* Alex Vu
+* Emily Warren
