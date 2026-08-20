@@ -1,4 +1,4 @@
-#The Westlakers
+# The Westlakers
 
 ## Branching Strategy
 Given the size of the team and scope of the project, a flexibile, frequently changing trunk-based strategy will be the approach taken for the development of the project.
