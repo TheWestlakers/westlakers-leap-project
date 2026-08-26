@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Build Image') {
             steps {
-                sh 'docker build -t team-skeleton:0.1.0 .'
+                sh 'docker build -t team-skeleton:latest .'
             }
         }
         stage('Test') {
