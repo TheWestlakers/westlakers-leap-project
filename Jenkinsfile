@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools {
+        maven 'Maven3'
+    }
     stages {
         stage('Checkout') {
             steps {
@@ -8,16 +11,16 @@ pipeline {
         }
         stage('Build Image') {
             steps {
-                sh 'docker build -t team-skeleton:latest .'
+                sh 'docker build -t team-skeleton:latest ./starter'
             }
         }
         stage('Test') {
             steps {
-                sh 'mvn -B test'
+                sh 'mvn -B test -f ./starter/pom.xml'
             }
             post {
                 always {
-                    junit 'target/surefire-reports/*.xml'
+                    junit 'starter/target/surefire-reports/*.xml'
                 }
             }
         }
